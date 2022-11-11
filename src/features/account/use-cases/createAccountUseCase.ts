@@ -2,7 +2,6 @@ import { Account, ExcelAccount } from "../aggregates/domain-models/account.model
 import { accountService } from "../aggregates/domain-services/account.service";
 
 export const createAccountUseCase = async (account: Account) => {
-     
     return await accountService.createAccount(account);
 }
 
